@@ -7,7 +7,7 @@ website:
   navbar:
     search: false
     left:
-      - text: "Residential Seggregation"
+      - text: "Residential Segregation"
         file: index.qmd
       - text: "Exploration"
         file: site_visit.qmd
