@@ -2,22 +2,37 @@
 format:
   closeread-html:
     theme: custom.css
+    page-layout: full
+    cr-style:
+      narrative-font-size: "22px"
+      section-background-color:  #3F704D
+      narrative-font-family: 'Poppins'
+      narrative-text-color-sidebar: #FDB515
 ---
 
-![](assets/images/racial_cov.webp){fig-align="center"}
+![](assets/images/thumbnail.JPG){width="100%"}
 
-# Racial Covenants
+# Examining The Roots of Environmental Injustice in Minneapolis: An Advocacy for Equitable Access to Urban Green Spaces
 
-Racial covenants are clauses inserted into property deeds to prevent non-White people from occupying and owning land since their presence were deemed to *“detrimental to property values”*. Introduced in the 1910s in MN, racial covenants legitimized residential segregation and gave way to the practice in redlining in the 1940s.
+Why do two Minneapolis neighborhoods, just a 15-minute drive apart, have such starkly different levels of access to quality green spaces? How does this correlate with the apparent environmental racism agaisnt Minneapolis residents of color. How much can we see, in this pattern, the legacy of residential seggregation such as racial covenants and redlining? 
+
+
+::: {.cr-section layout="sidebar-left"}
+@cr-racial-cov **Racial covenants** are clauses inserted into property deeds to prevent non-White people from occupying and owning land since their presence were deemed to *“detrimental to property values”*. Introduced in the 1910s in MN, racial covenants legitimized residential segregation and gave way to the practice in redlining in the 1940s.
 
 Racial covenants are among the many tools to decrease home-ownership rates of African American, contributing to their generational dispossession and displacement.
 
+::: {#cr-racial-cov}
+![](assets/images/racial_cov.webp){fig-align="center"}
+:::
+:::
+
 \
 \
 
-# Why does it matter?
+::: {.cr-section layout="sidebar-right"}
 
-The legacy of residential segregation has led to stark environmental injustice that tremendously ails Black, Latino, and Native American families in Minneapolis:
+@cr-protest **Why does it matter?** The legacy of residential segregation has led to stark environmental injustice that tremendously ails Black, Latino, and Native American families in Minneapolis:
 
 -   **6x asthma death risk**
     -   Among those who were under age 65, the asthma death rate for Black Minnesotans was 6 times higher than it was for white Minnesotans.
@@ -27,6 +42,12 @@ The legacy of residential segregation has led to stark environmental injustice t
     -   Latinx Minnesotans are testing positive at more than 4 times the overall population and 9 times the white population.
 -   **2x the cancer risk**
     -   Black Minnesotans have 2.25 times the cancer risk as the average Minnesotan
+    
+::: {#cr-protest}
+![](assets/images/northern_protest.jpg){fig-align="center"}
+    
+:::
+:::
 
 \
 \
@@ -36,12 +57,29 @@ The legacy of residential segregation has led to stark environmental injustice t
 \
 \
 
-# Our interests
 
-## Motivation
+::: {.cr-section layout="overlay-center"}
 
-Black and Indigenous people in the U.S. are expected to “bear the brunt of the impact for the “greater good””. And there has been extensive research around environmental injustice, yet they tend to merely provide a snapshot of this picture at a moment in time. How can we contextualize and provide a comprehensive portrayal of this injustice?
+@cr-herc Black and Indigenous people in the U.S. are expected to “bear the brunt of the impact for the “greater good””. And there has been extensive research around environmental injustice, yet they tend to merely provide a snapshot of this picture at a moment in time. 
 
-## Research question
+However, these practices didn’t just happen in a vacuum. Rather, these policies were part of a larger system that pave the way for the systemic environmental disparities we’re seeing today.
 
-Looking at historically racially covenanted neighborhoods in Minneapolis and present day environmental data, can we still see patterns in the impact of residential seggregation on the disparity of climate change effects? In other words, *how much does the introduction of racial covenants in the 1910s impact the environmental inequality in Minneapolis that we see today? How can we, then, inform environmental practices with data?*
+**How, then, can we contextualize and provide a comprehensive portrayal of this injustice?**
+
+::: {#cr-herc}
+![](assets/images/herc.JPG)
+    
+:::
+:::
+
+
+::: {.cr-section layout="overlay-center"}
+@cr-ques Looking at historically racially covenanted neighborhoods in Minneapolis and present day environmental data, can we still see patterns in the impact of residential seggregation on the disparity of climate change effects? In other words, our research question is two-fold: **How much does the introduction of racial covenants in the 1910s impact the environmental inequality in Minneapolis that we see today? How can we, then, inform environmental practices with data?**
+
+
+::: {#cr-ques}
+![](assets/images/research_ques.JPG)
+    
+:::
+
+::: 
