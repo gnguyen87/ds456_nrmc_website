@@ -4,9 +4,15 @@ authors: "Mikaely Evans, Ronan Manning"
 format:
   closeread-html:
     theme: custom.css
+    page-layout: full
+    cr-style:
+      narrative-font-size: "20px"
+      section-background-color:  #3F704D
+      narrative-font-family: 'Poppins'
+      narrative-text-color-sidebar: #FDB515
 ---
 
-**Urban areas in the United States are growing** to now accommodate about 83% of the population (1). As cities grow to account for the needs of their populations, it becomes increasingly essential to consider how cities are prioritizing green spaces and urban trees. Along with the ecological benefits, urban green spaces have been shown to **improve mental health, physical health, and generate a sense of community** for the surrounding residents (2). **The following map and statistical analysis show that there is a need to make urban green space more accessible for disadvantaged communities.**
+**Urban areas in the United States are growing** to now accommodate about 83% of the population. As cities grow to account for the needs of their populations, it becomes increasingly essential to consider how cities are prioritizing green spaces and urban trees. Along with the ecological benefits, urban green spaces have been shown to **improve mental health, physical health, and generate a sense of community** for the surrounding residents. **The following map and statistical analysis show that there is a need to make urban green space more accessible for disadvantaged communities.**
 \
 
 ```{r, message=FALSE, echo=FALSE, include=FALSE}
@@ -108,6 +114,7 @@ mn_census_tract_2 <- lakeless_tracts %>%
   mutate(park_area_ratio = str_remove(park_area_ratio, "[1/m^2]")) %>%
   mutate(park_area_ratio = as.numeric(park_area_ratio))
 ```
+
 
 ```{r, echo = FALSE}
 library(htmltools)
@@ -223,7 +230,7 @@ summary(lm_redline_parks)
 \
 
 
-As demonstrated above, **access to park areas varies across Minneapolis census tracts**, with some tracts lacking parks entirely and others having an abundance. In order to test whether or not parks are equally available across census tracts in Minneapolis, we performed a linear regression analyzing the relationship between total park area ($m^2$) and HOLC grade. The park data was downloaded from the Twin Cities Metropolitan Council (3) and the HOLC Grade data was downloaded from (4).
+As demonstrated above, **access to park areas varies across Minneapolis census tracts**, with some tracts lacking parks entirely and others having an abundance. In order to test whether or not parks are equally available across census tracts in Minneapolis, we performed a linear regression analyzing the relationship between total park area ($m^2$) and HOLC grade.
 
 **lm(formula = total_park_area ~ holc_grade)**
 
@@ -254,14 +261,19 @@ The linear regression model uses the park areas in census tracts of HOLC grade A
 
 This model shows us that for every additional 1% of a census tract area covered by parks, its social vulnerability score (measured on a 0 to 1 percentile scale) drops by an average of 0.009. That is, if one tract has 10% more green space than another, we can expect it to score 9 percentile points better on SVI, indicating a strong relationship between a community's access to public green spaces and its overall wellbeing. 
 
+# Moving Towards Equitable Park Access
+
+::: {.cr-section layout="sidebar-left"}
+@cr-football The City of Minneapolis recognizes the history of injustice and is committed to **"reverse years of underfunding in neighborhood parks"** by launching the 20-Year Neighborhood Park Plan which specifically targets investments in park maintenance and funding in areas of concentrated poverty and communities with 50% or more people of color. This program has been active since 2016 and has increased maintenance, rehabilitation, and capital investments to make neighborhood parks more accessible and enjoyable. Read more about this work on the [Minneapolis Parks & Recreation Board Website](https://www.minneapolisparks.org/about-us/budget-financial/20-year_neighborhood_park_plan/).
+
+::: {#cr-football}
+<div style="display: flex; justify-content: center; gap: 5.5px;">
+![](assets/images/LoganParkFootballField.JPG){fig-align="center" width="90%"} </div>
+
+:::
+:::
 
 
 
-
-Citation:
-1. Center for Sustainable Systems, University of Michigan. 2024. “U.S. Cities Factsheet.” Pub. No. CSS09-06.
-2. Lee, Andrew CK, and Ravi Maheswaran. "The health benefits of urban green spaces: a review of the evidence." Journal of public health 33.2 (2011): 212-222.
-3. REST API ArcGIS for: City of Minneapolis. (2013). Minneapolis Park & Recreation Board park locations.
-4. 
 
 
