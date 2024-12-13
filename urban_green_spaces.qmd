@@ -1,6 +1,6 @@
 ---
 title: "Adovocating for Equitable Access to Urban Green Spaces"
-author: "Mikaely Evans"
+author: "Mikaely Evans, Ronan Manning"
 format:
   closeread-html:
     theme: custom.css
@@ -241,7 +241,7 @@ The linear regression model uses the park areas in census tracts of HOLC grade A
 
 **Add introductory sentence** Below, we use a linear model to analyze the relationship between park space and social vulnerability in Minneapolis census tracts. 
 
-**lm(formula = SVI ~ total_park_area)**
+**lm(formula = SVI ~ park_percentage)**
 
 | Variable        | Estimate  | Std. Error  | t-value | P-value       |
 |-----------------|-----------|-------------|---------|---------------|
@@ -251,7 +251,7 @@ The linear regression model uses the park areas in census tracts of HOLC grade A
 
 \
 
-This model shows us that for every additional 1% of a census tract area covered by parks, its social vulnerability score (measured on a 0 to 1 percentile scale) drops by an average of 0.009. That is, if one tract has 10% more green space than another, we can expect it to score 9 percentile points better on SVI, indicating **a strong relationship between a community's access to public green spaces and its overall wellbeing**. 
+This model shows us that for every additional 1% of a census tract area covered by parks, its social vulnerability score (measured on a 0 to 1 percentile scale) drops by an average of 0.009. That is, if one tract has 10% more green space than another, we can expect it to score 9 percentile points better on SVI, indicating a strong relationship between a community's access to public green spaces and its overall wellbeing. 
 
 
 
