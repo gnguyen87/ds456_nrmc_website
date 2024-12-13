@@ -4,7 +4,7 @@ format:
     theme: custom.css
     page-layout: full
     cr-style:
-      narrative-font-size: "22px"
+      narrative-font-size: "20px"
       section-background-color:  #3F704D
       narrative-font-family: 'Poppins'
       narrative-text-color-sidebar: #FDB515
@@ -48,15 +48,6 @@ Racial covenants are among the many tools to decrease home-ownership rates of Af
     
 :::
 :::
-
-\
-\
-
-# Our site visits (probably should have a more interesting title)
-
-\
-\
-
 
 ::: {.cr-section layout="overlay-center"}
 

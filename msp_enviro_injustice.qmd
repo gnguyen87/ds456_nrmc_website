@@ -5,7 +5,7 @@ format:
   closeread-html:
     theme: custom.css
     cr-style:
-      narrative-font-size: "24px"
+      narrative-font-size: "20px"
       section-background-color:  #3F704D
       narrative-font-family: 'Poppins'
       narrative-text-color-sidebar: #FDB515
