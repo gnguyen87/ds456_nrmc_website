@@ -56,8 +56,8 @@ geojson_sf_2 <- st_read(temp_geojson2)
 
 ```{r, echo=FALSE, include = FALSE}
 # Downloading other important data from GitHub
-svi <- read.csv("../data/clean/svi.csv")
-holc <- st_read("../data/clean/redlining_msp_shp/redlining_msp.shp")
+svi <- read.csv("data/clean/svi.csv")
+holc <- st_read("data/clean/redlining_msp_shp/redlining_msp.shp")
 ```
 
 ```{r, echo=FALSE, include=FALSE}
@@ -191,7 +191,7 @@ park_area_leaf_2
 
 ```{r, include = FALSE}
 # Redlining per census tract data from GitHub/Na's code
-msp_census_tracts <- read.csv("../data/raw/minneapolis-tree-canopy.csv") %>%  select(region_name)
+msp_census_tracts <- read.csv("data/raw/minneapolis-tree-canopy.csv") %>%  select(region_name)
 msp_census_tracts <- msp_census_tracts %>%
   mutate(region_name = str_replace_all(region_name, '[:alpha:]*', "") %>% str_trim()) %>%
   filter(region_name != "27123043002") %>%
@@ -199,7 +199,7 @@ msp_census_tracts <- msp_census_tracts %>%
   pull(region_name) %>%
   as.list()
 
-redlining <- st_read('../data/raw/141121-V2/HRS2020B.shp')
+redlining <- st_read('data/raw/141121-V2/HRS2020B.shp')
 redlining_msp <- redlining %>%
   filter(GEOID20 %in% msp_census_tracts) %>%
   st_drop_geometry() %>%
