@@ -9,6 +9,8 @@ website:
     left:
       - text: "Residential Seggregation"
         file: index.qmd
+      - text: "Exploration"
+        file: site_visit.qmd
       - text: "Minneapolis' Current Environmental Status"
         file: msp_enviro_injustice.qmd
       - text: "Why Urban Green Spaces"
