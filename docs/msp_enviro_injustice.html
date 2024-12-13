@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Na Nguyen and Charles Batkaishan">
 
-<title>Homepage - Examining The Roots of Environmental Injustice in Minneapolis</title>
+<title>Examining The Roots of Environmental Injustice in Minneapolis – Homepage</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -108,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -123,10 +123,10 @@ ul.task-list li input[type="checkbox"] {
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-narrative-font-family: Poppins;
---cr-section-background-color: ;
---cr-narrative-text-color-sidebar: ;
+          --cr-narrative-text-color-sidebar: ;
+--cr-narrative-font-family: Poppins;
 --cr-narrative-font-size: 24px;
+--cr-section-background-color: ;
         }
       </style>
     
@@ -192,12 +192,12 @@ ul.task-list li input[type="checkbox"] {
 <p>First, we will look at the uneven distribution of <strong>land surface temperature</strong> in Minneapolis as a result of racial covenants and redlining.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-focus-on="cr-map-lst" data-pan-to="220px, -300px" data-scale-by="1.6">
+<div class="trigger new-trigger" data-scale-by="1.6" data-pan-to="220px, -300px" data-focus-on="cr-map-lst">
 <div class="narrative">
 <p>In <strong>higher HOLC</strong> grade neighborhoods with <strong>dense</strong> concentrations of racial covenants, today’s land surface temperature is <strong>markedly lower</strong>.<img src="assets/images/holc_grade_legend.png" class="img-fluid" width="110"><img src="assets/images/mean_lst_legend.png" class="img-fluid" width="120"></p>
 </div>
 </div>
-<div class="trigger new-trigger" data-focus-on="cr-map-lst" data-pan-to="50px, 300px" data-scale-by="1.6">
+<div class="trigger new-trigger" data-scale-by="1.6" data-pan-to="50px, 300px" data-focus-on="cr-map-lst">
 <div class="narrative">
 <p>Contrastly, land surface temperature is <strong>remarkably higher</strong> in areas that were deemed as <strong>“declining”, “hazardous”, and “undesirable”</strong>–areas where there were little to no racial covenants.<img src="assets/images/holc_grade_legend.png" class="img-fluid" width="110"><img src="assets/images/mean_lst_legend.png" class="img-fluid" width="120"></p>
 </div>
@@ -220,12 +220,12 @@ ul.task-list li input[type="checkbox"] {
 <p>Similarly, we can observe these patterns when comparing <strong>levels of air pollution from factories</strong>.</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-focus-on="cr-map-air" data-pan-to="230px, -280px" data-scale-by="1.7">
+<div class="trigger new-trigger" data-scale-by="1.7" data-pan-to="230px, -280px" data-focus-on="cr-map-air">
 <div class="narrative">
 <p>Neighborhoods with a lot of previous racial covenants, ones that were deemed as <strong>desirable</strong> and <strong>worthy of investment</strong>, tend to have <strong>no</strong> factories planted within its vicinity. They tend to be exposed to <strong>zero</strong> emissions of PM2.5 from nearby factories.<img src="assets/images/holc_grade_legend.png" class="img-fluid" width="110"><img src="assets/images/air_pollution_legend.png" class="img-fluid" width="140"></p>
 </div>
 </div>
-<div class="trigger new-trigger" data-focus-on="cr-map-air" data-pan-to="340px, 300px" data-scale-by="1.6">
+<div class="trigger new-trigger" data-scale-by="1.6" data-pan-to="340px, 300px" data-focus-on="cr-map-air">
 <div class="narrative">
 <p>On the other hand, in the Near North neighborhood (no racial covenants and C-D HOLC grade), one of Minneapolis’ communities with the <strong>biggest BIPOC population</strong>, are exposed to <strong>severely high</strong> levels of PM2.5 emissions. This is because within their area, there are around 15 air emitting factories–including the Hennepin Energy Recovery Center.<img src="assets/images/holc_grade_legend.png" class="img-fluid" width="110"><img src="assets/images/air_pollution_legend.png" class="img-fluid" width="140"></p>
 </div>
@@ -281,18 +281,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -324,7 +313,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -332,7 +343,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
