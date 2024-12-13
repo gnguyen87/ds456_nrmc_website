@@ -12,7 +12,7 @@ format:
 
 ![](assets/images/StAnthonyParkPlaygroundAndTennis.JPG){fig-align="center" width="85%"}
 
-To gain a deeper understanding of the parks and neighborhoods included in our analysis, we conducted site visits to several key locations. Experiencing these areas firsthand allowed us to observe the unique atmosphere and characteristics of each neighborhood. Specifically, we visited Saint Anthony Park, Logan Park, Kenwood Park, Lake of the Isles Park, and the Hennepin Energy Recovery Center (HERC). These locations were chosen strategically: Saint Anthony and Logan Parks are situated in neighborhoods with HOLC grades C and D, while Kenwood and Lake of the Isles Park are surrounded by areas with HOLC grades A and B. During these visits, we noted distinct differences in the parks' features and surrounding environments, providing valuable context for our study.
+To gain a deeper understanding of the parks and neighborhoods included in our analysis, we conducted site visits to several key locations. Experiencing these areas firsthand allowed us to observe the unique atmosphere and characteristics of each neighborhood. Specifically, we visited Saint Anthony Park, Logan Park, Kenwood Park, and Lake of the Isles Park. These locations were chosen strategically: Saint Anthony and Logan Parks are situated in neighborhoods with HOLC grades C and D, while Kenwood and Lake of the Isles Park are surrounded by areas with HOLC grades A and B. During these visits, we noted distinct differences in the parks' features and surrounding environments, providing valuable context for our study.
 
 
 ::: {.cr-section layout="sidebar-left"}
