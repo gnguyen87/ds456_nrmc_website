@@ -247,7 +247,7 @@ The linear regression model uses the park areas in census tracts of HOLC grade A
 
 \
 
-**Add introductory sentence** Below, we use a linear model to analyze the relationship between park space and social vulnerability in Minneapolis census tracts. 
+In addition to HOLC grades, park area also has strong ties to social vulnerability. Below, we use a linear model to analyze the relationship between park space and social vulnerability (as measured by the CDC's Social Vulnerability Index, a score given to communities based on a variety of factors related to their capacity to deal with potential environmental disaster) in Minneapolis census tracts. 
 
 **lm(formula = SVI ~ park_percentage)**
 
