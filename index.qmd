@@ -14,7 +14,7 @@ format:
 
 # Examining The Roots of Environmental Injustice in Minneapolis: An Advocacy for Equitable Access to Urban Green Spaces
 
-Why do two Minneapolis neighborhoods, just a 15-minute drive apart, have such starkly different levels of access to quality green spaces? How does this correlate with the apparent environmental racism agaisnt Minneapolis residents of color. How much can we see, in this pattern, the legacy of residential seggregation such as racial covenants and redlining? 
+Why do two Minneapolis neighborhoods, just a 15-minute drive apart, have such starkly different levels of access to quality green spaces? How does this correlate with the apparent environmental racism agaisnt Minneapolis residents of color. How much can we see, in this pattern, the legacy of residential segregation such as racial covenants and redlining? 
 
 
 ::: {.cr-section layout="sidebar-left"}
@@ -65,7 +65,7 @@ However, these practices didn’t just happen in a vacuum. Rather, these policie
 
 
 ::: {.cr-section layout="overlay-center"}
-@cr-ques Looking at historically racially covenanted neighborhoods in Minneapolis and present day environmental data, can we still see patterns in the impact of residential seggregation on the disparity of climate change effects? In other words, our research question is two-fold: **How much does the introduction of racial covenants in the 1910s impact the environmental inequality in Minneapolis that we see today? How can we, then, inform environmental practices with data?**
+@cr-ques Looking at historically racially covenanted neighborhoods in Minneapolis and present day environmental data, can we still see patterns in the impact of residential segregation on the disparity of climate change effects? In other words, our research question is two-fold: **How much does the introduction of racial covenants in the 1910s impact the environmental inequality in Minneapolis that we see today? How can we, then, inform environmental practices with data?**
 
 
 ::: {#cr-ques}
