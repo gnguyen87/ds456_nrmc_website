@@ -1,0 +1,76 @@
+---
+title: "Data Sources and Literature Review"
+format:
+  closeread-html:
+    theme: custom.css
+    cr-style:
+      narrative-font-size: "20px"
+      section-background-color:  #3F704D
+      narrative-font-family: 'Poppins'
+      narrative-text-color-sidebar: #FDB515
+    page-layout: full
+---
+
+## Data Sources
+
+### **1. Racial Covenants**
+
+- **Source**: "Mapping Prejudice," University of Minnesota Libraries.
+- **Description**: Historical dataset of racial covenants extracted from 1.4 million property warranty deeds in Minneapolis.
+- **Time Period**: 1900–1960
+- **Link**: [Mapping Prejudice](https://mappingprejudice.umn.edu/)
+
+---
+
+### **2. HOLC Grades**
+
+- **Source**: "Mapping Inequality," Digital Scholarship Lab, University of Richmond.
+- **Description**: Historical dataset on Home Owners' Loan Corporation (HOLC) neighborhood grades, classifying areas as A, B, C, or D based on desirability and racial composition.
+- **Link**: [Mapping Inequality](https://dsl.richmond.edu/panorama/redlining/)
+
+---
+
+### **3. Land Surface Temperature (LST)**
+
+- **Source**: 
+  1. Metropolitan Council
+  2. Landsat 9 Satellite data
+- **Description**: Satellite-derived data for Minneapolis land surface temperatures, captured at 11:59 AM CDT on September 1, 2022.
+- **Link**: [Landsat Program](https://gisdata.mn.gov/is/dataset/us-mn-state-metc-env-cva-lst2022)
+
+---
+
+### **4. Social Vulnerability Index (SVI)**
+
+- **Source**: FEMA/CDC Social Vulnerability Index.
+- **Description**: Measures factors like poverty, housing, and access to transportation to assess a community’s vulnerability.
+- **Time Period**: 2022
+- **Link**: [CDC Social Vulnerability Index](https://www.atsdr.cdc.gov/placeandhealth/svi/index.html)
+
+---
+
+### **5. Air Pollution**
+
+- **Source**: Minnesota Pollution Control Agency.
+- **Description**: Air emissions data by ZIP code, facility, and industry, focusing on pollutants such as PM2.5 from 2012–2022.
+- **Link**: [Minnesota Pollution Control Agency](https://www.pca.state.mn.us/)
+
+---
+
+### **6. Public Green Spaces**
+
+- **Source**: 
+  1. Open Data Minneapolis
+  2. Metropolitan Council
+- **Description**: Dataset on public green spaces, including park acreage and amenities in Minneapolis.
+- **Link**: [Open Data Minneapolis](https://opendata.minneapolismn.gov/) | [Metropolitan Council](https://metrocouncil.org/)
+)
+
+
+## Literature Review
+
+### Environmental Inequality and Urban Green Spaces
+
+- **Title**: [The impacts of racially discriminatory housing policies on the distribution of intra-urban heat and tree canopy: A comparison of racial covenants and redlining in Minneapolis, MN](https://www.sciencedirect.com/science/article/pii/S0169204624000197)  
+- **Authors**: Walker, Rebecca H., Keeler, Bonnie L., and Derickson, Kate D.  
+- **Summary**: This article investigates the historical influence of racially discriminatory housing policies, such as racial covenants and redlining, on present-day environmental inequalities in Minneapolis. It highlights how these policies have shaped disparities in urban heat distribution and tree canopy coverage.

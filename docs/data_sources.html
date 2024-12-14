@@ -2,13 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Na Nguyen and Charles Batkaishan">
 
-<title>Homepage - Examining The Roots of Environmental Injustice in Minneapolis</title>
+<title>Data Sources and Literature Review – Homepage</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -89,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -103,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Exploration</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./msp_enviro_injustice.html" aria-current="page"> 
+    <a class="nav-link" href="./msp_enviro_injustice.html"> 
 <span class="menu-text">Minneapolis’ Current Environmental Status</span></a>
   </li>  
   <li class="nav-item">
@@ -111,12 +110,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Why Urban Green Spaces</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./data_sources.html"> 
+    <a class="nav-link active" href="./data_sources.html" aria-current="page"> 
 <span class="menu-text">Sources</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -131,8 +130,8 @@ ul.task-list li input[type="checkbox"] {
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-narrative-font-size: 24px;
---cr-narrative-font-family: Poppins;
+          --cr-narrative-font-family: Poppins;
+--cr-narrative-font-size: 20px;
 --cr-narrative-text-color-sidebar: ;
 --cr-section-background-color: ;
         }
@@ -141,19 +140,13 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Examining The Roots of Environmental Injustice in Minneapolis</h1>
+<h1 class="title">Data Sources and Literature Review</h1>
 </div>
 
 
 
 <div class="quarto-title-meta column-page">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Na Nguyen and Charles Batkaishan </p>
-          </div>
-  </div>
     
   
     
@@ -164,155 +157,86 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This interactive dashboard allows you to explore the legacy of residential segregation, one that has led to stark environmental injustice that tremendously ails Black, Latino, and Native American families in Minneapolis.</p>
-<section id="finding" class="level2">
-<h2 class="anchored" data-anchor-id="finding">Finding</h2>
-<p>The correlation between climate change effects and marginalized neighborhoods are apparent: <strong>the more socially vulnerable a neighborhood is, the more exposed they are to the effects of climate change—and we can trace this back to residential segregation practices from the early 20th century.</strong></p>
-<iframe src="https://opbfa1-anh-nguyen.shinyapps.io/msp_enviro_no_title/" style="width: 100%; height:920px; margin: 0 auto; ">
-</iframe>
-<p><br>
-</p>
-<p><br>
-</p>
-<p><br>
-</p>
+<section id="data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="data-sources">Data Sources</h2>
+<section id="racial-covenants" class="level3">
+<h3 class="anchored" data-anchor-id="racial-covenants"><strong>1. Racial Covenants</strong></h3>
+<ul>
+<li><strong>Source</strong>: “Mapping Prejudice,” University of Minnesota Libraries.</li>
+<li><strong>Description</strong>: Historical dataset of racial covenants extracted from 1.4 million property warranty deeds in Minneapolis.</li>
+<li><strong>Time Period</strong>: 1900–1960</li>
+<li><strong>Link</strong>: <a href="https://mappingprejudice.umn.edu/">Mapping Prejudice</a></li>
+</ul>
+<hr>
 </section>
-<section id="social-vulnerability-vs.-climate-change" class="level2">
-<h2 class="anchored" data-anchor-id="social-vulnerability-vs.-climate-change">Social Vulnerability vs.&nbsp;Climate Change</h2>
-<p>From our findings, it was clear that socially vulnerable neighborhoods (high poverty levels and minority population) are more exposed to air pollution and higher temperatures.</p>
-<p>Before controlling for variables, socially vulnerable census tracts have a higher median for both average PM2.5 emissions and land surface temperature (graph below).</p>
-<div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
-<p><img src="assets/images/air_pollution_boxplot.png" alt="Air Pollution Boxplot" width="562"> <img src="assets/images/lst_boxplot.png" alt="LST Boxplot" width="560"></p>
-</div>
-<p>More importantly, <strong>after matching and modelling</strong>, we observed that census tracts with higher social vulnerability are exposed to <strong>0.96 tons</strong> of PM2.5 more than less vulnerable areas. In the same vein, our model revealed that census tracts with higher social vulnerability had a mean land surface temperature that were <strong>2.22°F higher</strong> than less vulnerable areas.</p>
-<p>Click <a href="https://gnguyen87.github.io/causal_final_proj/"><strong>here</strong></a> for the full statistical report!</p>
-<p><br>
-</p>
-<p><br>
-</p>
-<p><br>
-</p>
+<section id="holc-grades" class="level3">
+<h3 class="anchored" data-anchor-id="holc-grades"><strong>2. HOLC Grades</strong></h3>
+<ul>
+<li><strong>Source</strong>: “Mapping Inequality,” Digital Scholarship Lab, University of Richmond.</li>
+<li><strong>Description</strong>: Historical dataset on Home Owners’ Loan Corporation (HOLC) neighborhood grades, classifying areas as A, B, C, or D based on desirability and racial composition.</li>
+<li><strong>Link</strong>: <a href="https://dsl.richmond.edu/panorama/redlining/">Mapping Inequality</a></li>
+</ul>
+<hr>
 </section>
-<section id="a-closer-look" class="level2">
-<h2 class="anchored" data-anchor-id="a-closer-look">A Closer Look</h2>
-<p>Let’s take a closer look at how residential segregation correlates with the disparity in social vulnerability index*, temperature, and air pollution in different Minneapolis neighborhoods.</p>
-<p>**The current CDC/ATSDR Social Vulnerability Index uses 16 U.S. Census variables from the 5-year American Community Survey (ACS) to identify communities that may need support before, during, or after disasters. These variables are grouped into four themes that cover four major areas of social vulnerability and then combined into a single measure of overall social vulnerability.*</p>
-<div class="cr-section cr-column-screen sidebar-right">
-<div class="narrative-col">
-<div class="trigger new-trigger" data-focus-on="cr-map-svi">
-<div class="narrative">
-<p>First, we will look at the uneven distribution of <strong>social vulnerability score</strong> in Minneapolis as a result of racial covenants and redlining.</p>
-</div>
-</div>
-<div class="trigger new-trigger" data-focus-on="cr-map-svi-1">
-<div class="narrative">
-<p>Neighborhood who are <strong>less socially vulnerable</strong> tend to reside in <strong>better HOLC</strong> grade neighborhoods with <strong>dense</strong> concentrations of racial covenants.<img src="assets/images/holc_grade_legend.png" class="img-fluid" width="100"><img src="assets/images/svi_legend.png" class="img-fluid" width="120"></p>
-</div>
-</div>
-<div class="trigger new-trigger" data-focus-on="cr-map-svi-2">
-<div class="narrative">
-<p>Yet, social vulnerability score is <strong>much higher</strong> in areas that were viewed as <strong>“undesirable”</strong>–where there were little to no racial covenants.<img src="assets/images/holc_grade_legend.png" class="img-fluid" width="100"><img src="assets/images/svi_legend.png" class="img-fluid" width="120"></p>
-</div>
-</div>
-</div>
-<div class="sticky-col">
-<div class="sticky-col-stack">
-<div id="cr-map-svi" class="sticky">
-<div style="display: flex; justify-content: center; gap: 5.5px;">
-<p><img src="assets/images/racial_cov.png" class="img-fluid quarto-figure quarto-figure-center" style="width:40.0%"> <img src="assets/images/svi.png" class="img-fluid quarto-figure quarto-figure-center" style="width:41.2%"></p>
-</div>
-</div>
-<div id="cr-map-svi-1" class="sticky">
-<div style="display: flex; justify-content: center; gap: 5.5px;">
-<p><img src="assets/images/racial_cov.png" class="img-fluid quarto-figure quarto-figure-center" style="width:40.0%"> <img src="assets/images/svi_1.png" class="img-fluid quarto-figure quarto-figure-center" style="width:41.2%"></p>
-</div>
-</div>
-<div id="cr-map-svi-2" class="sticky">
-<div style="display: flex; justify-content: center; gap: 5.5px;">
-<p><img src="assets/images/racial_cov.png" class="img-fluid quarto-figure quarto-figure-center" style="width:40.0%"> <img src="assets/images/svi_2.png" class="img-fluid quarto-figure quarto-figure-center" style="width:41.2%"></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cr-section cr-column-screen sidebar-left">
-<div class="narrative-col">
-<div class="trigger new-trigger" data-focus-on="cr-map-lst">
-<div class="narrative">
-<p>Now, we will see how <strong>land surface temperature</strong> differ in different Minneapolis neighborhoods as a result of racial covenants and redlining.</p>
-</div>
-</div>
-<div class="trigger new-trigger" data-focus-on="cr-map-lst-1">
-<div class="narrative">
-<p>In <strong>better HOLC</strong> grade neighborhoods with <strong>dense</strong> concentrations of racial covenants, today’s land surface temperature is <strong>markedly lower</strong>.<img src="assets/images/holc_grade_legend.png" class="img-fluid" width="93"><img src="assets/images/mean_lst_legend.png" class="img-fluid" width="120"></p>
-</div>
-</div>
-<div class="trigger new-trigger" data-focus-on="cr-map-lst-2">
-<div class="narrative">
-<p>Contrastly, land surface temperature is <strong>remarkably higher</strong> in areas that were deemed as <strong>“declining”, “hazardous”, and “undesirable”</strong>–areas where there were little to no racial covenants.<img src="assets/images/holc_grade_legend.png" class="img-fluid" width="110"><img src="assets/images/mean_lst_legend.png" class="img-fluid" width="120"></p>
-</div>
-</div>
-</div>
-<div class="sticky-col">
-<div class="sticky-col-stack">
-<div id="cr-map-lst" class="sticky">
-<div style="display: flex; justify-content: center; gap: 5.5px;">
-<p><img src="assets/images/racial_cov.png" class="img-fluid quarto-figure quarto-figure-center" style="width:40.0%"> <img src="assets/images/mean_lst.png" class="img-fluid quarto-figure quarto-figure-center" style="width:41.2%"></p>
-</div>
-</div>
-<div id="cr-map-lst-1" class="sticky">
-<div style="display: flex; justify-content: center; gap: 5.5px;">
-<p><img src="assets/images/racial_cov.png" class="img-fluid quarto-figure quarto-figure-center" style="width:40.0%"> <img src="assets/images/mean_lst_1.png" class="img-fluid quarto-figure quarto-figure-center" style="width:41.2%"></p>
-</div>
-</div>
-<div id="cr-map-lst-2" class="sticky">
-<div style="display: flex; justify-content: center; gap: 5.5px;">
-<p><img src="assets/images/racial_cov.png" class="img-fluid quarto-figure quarto-figure-center" style="width:40.0%"> <img src="assets/images/mean_lst_2.png" class="img-fluid quarto-figure quarto-figure-center" style="width:41.2%"></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cr-section cr-column-screen sidebar-right">
-<div class="narrative-col">
-<div class="trigger new-trigger" data-focus-on="cr-map-air">
-<div class="narrative">
-<p>Similarly, we can observe these patterns when comparing <strong>levels of air pollution from factories</strong>.</p>
-</div>
-</div>
-<div class="trigger new-trigger" data-focus-on="cr-map-air-1">
-<div class="narrative">
-<p>Neighborhoods with a lot of previous racial covenants, ones that were deemed as <strong>desirable</strong> and <strong>worthy of investment</strong>, tend to have <strong>no</strong> factories planted within its vicinity. They tend to be exposed to <strong>zero</strong> emissions of PM2.5 from nearby factories.<img src="assets/images/holc_grade_legend.png" class="img-fluid" width="110"><img src="assets/images/air_pollution_legend.png" class="img-fluid" width="140"></p>
-</div>
-</div>
-<div class="trigger new-trigger" data-focus-on="cr-map-air-2">
-<div class="narrative">
-<p>On the other hand, in the Near North neighborhood (no racial covenants and C-D HOLC grade), one of Minneapolis’ communities with the <strong>biggest BIPOC population</strong>, are exposed to <strong>severely high</strong> levels of PM2.5 emissions. This is because within their area, there are around 15 air emitting factories–including the Hennepin Energy Recovery Center.<img src="assets/images/holc_grade_legend.png" class="img-fluid" width="110"><img src="assets/images/air_pollution_legend.png" class="img-fluid" width="140"></p>
-</div>
-</div>
-</div>
-<div class="sticky-col">
-<div class="sticky-col-stack">
-<div id="cr-map-air" class="sticky">
-<div style="display: flex; justify-content: center; gap: 5.5px;">
-<p><img src="assets/images/racial_cov.png" class="img-fluid" style="width:40.0%"> <img src="assets/images/air_pollution.png" class="img-fluid" style="width:41.5%"></p>
-</div>
-</div>
-<div id="cr-map-air-1" class="sticky">
-<div style="display: flex; justify-content: center; gap: 5.5px;">
-<p><img src="assets/images/racial_cov.png" class="img-fluid" style="width:40.0%"> <img src="assets/images/air_pollution_1.png" class="img-fluid" style="width:41.5%"></p>
-</div>
-</div>
-<div id="cr-map-air-2" class="sticky">
-<div style="display: flex; justify-content: center; gap: 5.5px;">
-<p><img src="assets/images/racial_cov.png" class="img-fluid" style="width:40.0%"> <img src="assets/images/air_pollution_2.png" class="img-fluid" style="width:41.5%"></p>
-</div>
-</div>
-</div>
-</div>
-</div>
+<section id="land-surface-temperature-lst" class="level3">
+<h3 class="anchored" data-anchor-id="land-surface-temperature-lst"><strong>3. Land Surface Temperature (LST)</strong></h3>
+<ul>
+<li><strong>Source</strong>:
+<ol type="1">
+<li>Metropolitan Council</li>
+<li>Landsat 9 Satellite data</li>
+</ol></li>
+<li><strong>Description</strong>: Satellite-derived data for Minneapolis land surface temperatures, captured at 11:59 AM CDT on September 1, 2022.</li>
+<li><strong>Link</strong>: <a href="https://gisdata.mn.gov/is/dataset/us-mn-state-metc-env-cva-lst2022">Landsat Program</a></li>
+</ul>
+<hr>
+</section>
+<section id="social-vulnerability-index-svi" class="level3">
+<h3 class="anchored" data-anchor-id="social-vulnerability-index-svi"><strong>4. Social Vulnerability Index (SVI)</strong></h3>
+<ul>
+<li><strong>Source</strong>: FEMA/CDC Social Vulnerability Index.</li>
+<li><strong>Description</strong>: Measures factors like poverty, housing, and access to transportation to assess a community’s vulnerability.</li>
+<li><strong>Time Period</strong>: 2022</li>
+<li><strong>Link</strong>: <a href="https://www.atsdr.cdc.gov/placeandhealth/svi/index.html">CDC Social Vulnerability Index</a></li>
+</ul>
+<hr>
+</section>
+<section id="air-pollution" class="level3">
+<h3 class="anchored" data-anchor-id="air-pollution"><strong>5. Air Pollution</strong></h3>
+<ul>
+<li><strong>Source</strong>: Minnesota Pollution Control Agency.</li>
+<li><strong>Description</strong>: Air emissions data by ZIP code, facility, and industry, focusing on pollutants such as PM2.5 from 2012–2022.</li>
+<li><strong>Link</strong>: <a href="https://www.pca.state.mn.us/">Minnesota Pollution Control Agency</a></li>
+</ul>
+<hr>
+</section>
+<section id="public-green-spaces" class="level3">
+<h3 class="anchored" data-anchor-id="public-green-spaces"><strong>6. Public Green Spaces</strong></h3>
+<ul>
+<li><strong>Source</strong>:
+<ol type="1">
+<li>Open Data Minneapolis</li>
+<li>Metropolitan Council</li>
+</ol></li>
+<li><strong>Description</strong>: Dataset on public green spaces, including park acreage and amenities in Minneapolis.</li>
+<li><strong>Link</strong>: <a href="https://opendata.minneapolismn.gov/">Open Data Minneapolis</a> | <a href="https://metrocouncil.org/">Metropolitan Council</a> )</li>
+</ul>
+</section>
+</section>
+<section id="literature-review" class="level2">
+<h2 class="anchored" data-anchor-id="literature-review">Literature Review</h2>
+<section id="environmental-inequality-and-urban-green-spaces" class="level3">
+<h3 class="anchored" data-anchor-id="environmental-inequality-and-urban-green-spaces">Environmental Inequality and Urban Green Spaces</h3>
+<ul>
+<li><strong>Title</strong>: <a href="https://www.sciencedirect.com/science/article/pii/S0169204624000197">The impacts of racially discriminatory housing policies on the distribution of intra-urban heat and tree canopy: A comparison of racial covenants and redlining in Minneapolis, MN</a><br>
+</li>
+<li><strong>Authors</strong>: Walker, Rebecca H., Keeler, Bonnie L., and Derickson, Kate D.<br>
+</li>
+<li><strong>Summary</strong>: This article investigates the historical influence of racially discriminatory housing policies, such as racial covenants and redlining, on present-day environmental inequalities in Minneapolis. It highlights how these policies have shaped disparities in urban heat distribution and tree canopy coverage.</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -351,18 +275,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -394,7 +307,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -402,7 +337,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
