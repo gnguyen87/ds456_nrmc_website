@@ -66,7 +66,7 @@ Let's take a closer look at how residential segregation correlates with the disp
 [@cr-map-svi] First, we will look at the uneven distribution of **social vulnerability score** in Minneapolis as a result of racial covenants and redlining. 
 
 
-@cr-map-svi-1  Neighborhood who are **less socially vulnerable** tend to reside in **higher HOLC** grade neighborhoods with **dense** concentrations of racial covenants.![](assets/images/holc_grade_legend.png){width="100"}![](assets/images/svi_legend.png){width="120"}
+@cr-map-svi-1  Neighborhood who are **less socially vulnerable** tend to reside in **better HOLC** grade neighborhoods with **dense** concentrations of racial covenants.![](assets/images/holc_grade_legend.png){width="100"}![](assets/images/svi_legend.png){width="120"}
 
 @cr-map-svi-2 Yet, social vulnerability score is **much higher** in areas that were viewed as **"undesirable"**--where there were little to no racial covenants.![](assets/images/holc_grade_legend.png){width="100"}![](assets/images/svi_legend.png){width="120"}
 
@@ -92,7 +92,7 @@ Let's take a closer look at how residential segregation correlates with the disp
 ::: {.cr-section layout="sidebar-left"}
 [@cr-map-lst] Now, we will see how **land surface temperature** differ in different Minneapolis neighborhoods as a result of racial covenants and redlining.
 
-@cr-map-lst-1 In **higher HOLC** grade neighborhoods with **dense** concentrations of racial covenants, today's land surface temperature is **markedly lower**.![](assets/images/holc_grade_legend.png){width="93"}![](assets/images/mean_lst_legend.png){width="120"}
+@cr-map-lst-1 In **better HOLC** grade neighborhoods with **dense** concentrations of racial covenants, today's land surface temperature is **markedly lower**.![](assets/images/holc_grade_legend.png){width="93"}![](assets/images/mean_lst_legend.png){width="120"}
 
 @cr-map-lst-2 Contrastly, land surface temperature is **remarkably higher** in areas that were deemed as **"declining", "hazardous", and "undesirable"**--areas where there were little to no racial covenants.![](assets/images/holc_grade_legend.png){width="110"}![](assets/images/mean_lst_legend.png){width="120"}
 
