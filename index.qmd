@@ -27,12 +27,44 @@ Racial covenants are among the many tools to decrease home-ownership rates of Af
 :::
 :::
 
+# Importance of Urban Green Spaces
+
+
+::: {.cr-section layout="sidebar-right"}
+@cr-why-parks Urban ecosystems face heightened effects of climate change due to the Urban Heat Island Effect. **The Urban Heat Island Effect**, or UHI, causes increased air & land temperatures, severe unpredictable weather events, increased precipitation, and seasonal timing changes in cities. This effect occurs because of higher amounts of impervious surfaces, higher emissions, higher Albedo effect, and lower amounts of vegetation. 
+
+
+::: {#cr-why-parks}
+![](assets/images/new_trees.JPG){fig-align="center"}
+:::
+:::
+
+
+::: {.cr-section layout="sidebar-right"}
+@cr-greenspace Green spaces in urban ecosystems are a home for trees and other plants that have been shown to **reduce the severity of these UHI effects** by: <br> <br>
+- Lowering air & land temperatures <br>
+- Preventing droughts and floods <br> 
+- Providing habitat for native species <br>
+- Improving air quality <br>
+
+
+
+::: {#cr-greenspace}
+![](assets/images/new_trees3.JPG){fig-align="center"}
+:::
+:::
+
+
+
 \
 \
+
+
+# Why does it matter?
 
 ::: {.cr-section layout="sidebar-right"}
 
-@cr-protest **Why does it matter?** The legacy of residential segregation has led to stark environmental injustice that tremendously ails Black, Latino, and Native American families in Minneapolis:
+@cr-protest The legacy of residential segregation has led to stark environmental injustice that tremendously ails Black, Latino, and Native American families in Minneapolis:
 
 -   **6x asthma death risk**
     -   Among those who were under age 65, the asthma death rate for Black Minnesotans was 6 times higher than it was for white Minnesotans.
