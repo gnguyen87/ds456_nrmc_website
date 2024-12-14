@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -88,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -109,13 +109,9 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./urban_green_spaces.html"> 
 <span class="menu-text">Why Urban Green Spaces</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./data_sources.html"> 
-<span class="menu-text">Sources</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+          <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -130,10 +126,10 @@ ul.task-list li input[type="checkbox"] {
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-narrative-text-color-sidebar: ;
---cr-narrative-font-family: Poppins;
---cr-section-background-color: ;
+          --cr-section-background-color: ;
 --cr-narrative-font-size: 20px;
+--cr-narrative-font-family: Poppins;
+--cr-narrative-text-color-sidebar: ;
         }
       </style>
     
@@ -170,14 +166,60 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+</section>
+<section id="importance-of-urban-green-spaces" class="level1">
+<h1>Importance of Urban Green Spaces</h1>
+<div class="cr-section cr-column-screen sidebar-right">
+<div class="narrative-col">
+<div class="trigger new-trigger" data-focus-on="cr-why-parks">
+<div class="narrative">
+<p>Urban ecosystems face heightened effects of climate change due to the Urban Heat Island Effect. <strong>The Urban Heat Island Effect</strong>, or UHI, causes increased air &amp; land temperatures, severe unpredictable weather events, increased precipitation, and seasonal timing changes in cities. This effect occurs because of higher amounts of impervious surfaces, higher emissions, higher Albedo effect, and lower amounts of vegetation.</p>
+</div>
+</div>
+</div>
+<div class="sticky-col">
+<div class="sticky-col-stack">
+<div id="cr-why-parks" class="sticky">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/images/new_trees.JPG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cr-section cr-column-screen sidebar-right">
+<div class="narrative-col">
+<div class="trigger new-trigger" data-focus-on="cr-greenspace">
+<div class="narrative">
+<p>Green spaces in urban ecosystems are a home for trees and other plants that have been shown to <strong>reduce the severity of these UHI effects</strong> by: <br> <br> - Lowering air &amp; land temperatures <br> - Preventing droughts and floods <br> - Providing habitat for native species <br> - Improving air quality <br></p>
+</div>
+</div>
+</div>
+<div class="sticky-col">
+<div class="sticky-col-stack">
+<div id="cr-greenspace" class="sticky">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/images/new_trees3.JPG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
 <p><br>
 <br>
 </p>
+</section>
+<section id="why-does-it-matter" class="level1">
+<h1>Why does it matter?</h1>
 <div class="cr-section cr-column-screen sidebar-right">
 <div class="narrative-col">
 <div class="trigger new-trigger" data-focus-on="cr-protest">
 <div class="narrative">
-<p><strong>Why does it matter?</strong> The legacy of residential segregation has led to stark environmental injustice that tremendously ails Black, Latino, and Native American families in Minneapolis:</p>
+<p>The legacy of residential segregation has led to stark environmental injustice that tremendously ails Black, Latino, and Native American families in Minneapolis:</p>
 </div>
 </div>
 <div class="trigger">
@@ -245,7 +287,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="narrative-col">
 <div class="trigger new-trigger" data-focus-on="cr-ques">
 <div class="narrative">
-<p>Looking at historically racially covenanted neighborhoods in Minneapolis and present day environmental data, can we still see patterns in the impact of residential seggregation on the disparity of climate change effects? In other words, our research question is two-fold: <strong>How much does the introduction of racial covenants in the 1910s impact the environmental inequality in Minneapolis that we see today? How can we, then, inform environmental practices with data?</strong></p>
+<p>Looking at historically racially covenanted neighborhoods in Minneapolis and present day environmental data, can we still see patterns in the impact of residential segregation on the disparity of climate change effects? In other words, our research question is two-fold: <strong>How much does the introduction of racial covenants in the 1910s impact the environmental inequality in Minneapolis that we see today? How can we, then, inform environmental practices with data?</strong></p>
 </div>
 </div>
 </div>
@@ -297,7 +339,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -329,29 +382,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -359,7 +390,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {

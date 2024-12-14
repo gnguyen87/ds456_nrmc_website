@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Na Nguyen and Charles Batkaishan">
 
-<title>Examining The Roots of Environmental Injustice in Minneapolis – Homepage</title>
+<title>Homepage - Examining The Roots of Environmental Injustice in Minneapolis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -110,13 +110,9 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./urban_green_spaces.html"> 
 <span class="menu-text">Why Urban Green Spaces</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./data_sources.html"> 
-<span class="menu-text">Sources</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+          <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -131,9 +127,9 @@ ul.task-list li input[type="checkbox"] {
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-narrative-font-size: 24px;
+          --cr-section-background-color: ;
 --cr-narrative-font-family: Poppins;
---cr-section-background-color: ;
+--cr-narrative-font-size: 24px;
 --cr-narrative-text-color-sidebar: ;
         }
       </style>
@@ -168,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
 <p>In this dashboard and following analysis, we chose to investigate the following variables in order to investigate our research questions:</p>
 <ul>
 <li>Racial Covenants: property warranty deeds in Minneapolis</li>
-<li>HOLC Grades: Home Owner Loan Corporation (HOLC) neighborhood grades: 1, 2, 3, or 4 per census tract</li>
+<li>HOLC Grades: Home Owner Loan Corporation (HOLC) neighborhood grades per census tract</li>
 <li>Social Vulnerability Index: Demographic and socioeconomic factors (such as poverty, lack of access to transportation, and crowded housing) that adversely affect communities that encounter hazards and other community-level stressors.</li>
 <li>Mean Land Surface Temperature: Average 09/01/2022 Land Surface Temperature per census tract (in Fahrenheit)</li>
 <li>PM2.5 Emissions: Annual emissions from all air permitted facilities located per zip code (2016-2020)</li>
@@ -215,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-map-svi-1">
 <div class="narrative">
-<p>Neighborhood who are <strong>less socially vulnerable</strong> tend to reside in <strong>higher HOLC</strong> grade neighborhoods with <strong>dense</strong> concentrations of racial covenants.<img src="assets/images/holc_grade_legend.png" class="img-fluid" width="100"><img src="assets/images/svi_legend.png" class="img-fluid" width="120"></p>
+<p>Neighborhood who are <strong>less socially vulnerable</strong> tend to reside in <strong>better HOLC</strong> grade neighborhoods with <strong>dense</strong> concentrations of racial covenants.<img src="assets/images/holc_grade_legend.png" class="img-fluid" width="100"><img src="assets/images/svi_legend.png" class="img-fluid" width="120"></p>
 </div>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-map-svi-2">
@@ -253,7 +249,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-map-lst-1">
 <div class="narrative">
-<p>In <strong>higher HOLC</strong> grade neighborhoods with <strong>dense</strong> concentrations of racial covenants, today’s land surface temperature is <strong>markedly lower</strong>.<img src="assets/images/holc_grade_legend.png" class="img-fluid" width="93"><img src="assets/images/mean_lst_legend.png" class="img-fluid" width="120"></p>
+<p>In <strong>better HOLC</strong> grade neighborhoods with <strong>dense</strong> concentrations of racial covenants, today’s land surface temperature is <strong>markedly lower</strong>.<img src="assets/images/holc_grade_legend.png" class="img-fluid" width="93"><img src="assets/images/mean_lst_legend.png" class="img-fluid" width="120"></p>
 </div>
 </div>
 <div class="trigger new-trigger" data-focus-on="cr-map-lst-2">
@@ -360,7 +356,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -392,29 +399,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -422,7 +407,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
