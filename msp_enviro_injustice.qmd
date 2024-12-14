@@ -16,7 +16,7 @@ This interactive dashboard allows you to explore the legacy of residential segre
 In this dashboard and following analysis, we chose to investigate the following variables in order to investigate our research questions:
 
 -   Racial Covenants: property warranty deeds in Minneapolis
--   HOLC Grades: Home Owner Loan Corporation (HOLC) neighborhood grades: 1, 2, 3, or 4 per census tract
+-   HOLC Grades: Home Owner Loan Corporation (HOLC) neighborhood grades per census tract
 -   Social Vulnerability Index: Demographic and socioeconomic factors (such as poverty, lack of access to transportation, and crowded housing) that adversely affect communities that encounter hazards and other community-level stressors.
 -   Mean Land Surface Temperature: Average 09/01/2022 Land Surface Temperature per census tract (in Fahrenheit)
 -   PM2.5 Emissions: Annual emissions from all air permitted facilities located per zip code (2016-2020)
