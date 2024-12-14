@@ -15,6 +15,9 @@ website:
         file: msp_enviro_injustice.qmd
       - text: "Why Urban Green Spaces"
         file: urban_green_spaces.qmd
+      - text: "Sources"
+        file: data_sources.qmd
+      
 
 format:
   html:
