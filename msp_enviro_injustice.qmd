@@ -13,10 +13,6 @@ format:
 
 This interactive dashboard allows you to explore the legacy of residential segregation, one that has led to stark environmental injustice that tremendously ails Black, Latino, and Native American families in Minneapolis.
 
-## Finding
-
-The correlation between climate change effects and marginalized neighborhoods are apparent: **the more socially vulnerable a neighborhood is, the more exposed they are to the effects of climate change---and we can trace this back to residential segregation practices from the early 20th century.**
-
 <iframe src="https://opbfa1-anh-nguyen.shinyapps.io/msp_enviro_no_title/" style="width: 100%; height:920px; margin: 0 auto; ">
 
 </iframe>
