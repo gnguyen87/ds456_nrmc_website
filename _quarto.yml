@@ -17,6 +17,10 @@ website:
         file: urban_green_spaces.qmd
       - text: "Sources"
         file: data_sources.qmd
+    right: 
+      - icon: github
+        href: https://github.com/gnguyen87/ds456_nrmc_website
+  
       
 
 format:
