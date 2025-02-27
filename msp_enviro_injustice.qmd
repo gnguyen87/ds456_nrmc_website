@@ -23,25 +23,6 @@ This interactive dashboard allows you to explore the legacy of residential segre
 
 \
 
-## Social Vulnerability vs. Climate Change
-
-From our findings, it was clear that socially vulnerable neighborhoods (high poverty levels and minority population) are more exposed to air pollution and higher temperatures.
-
-Before controlling for variables, socially vulnerable census tracts have a higher median for both average PM2.5 emissions and land surface temperature (graph below).
-
-::: {style="display: flex; justify-content: center; align-items: center; gap: 20px;"}
-<img src="assets/images/air_pollution_boxplot.png" alt="Air Pollution Boxplot" width="562"/> <img src="assets/images/lst_boxplot.png" alt="LST Boxplot" width="560"/>
-:::
-
-More importantly, **after matching and modelling**, we observed that census tracts with higher social vulnerability are exposed to **0.96 tons** of PM2.5 more than less vulnerable areas. In the same vein, our model revealed that census tracts with higher social vulnerability had a mean land surface temperature that were **2.22°F higher** than less vulnerable areas.
-
-Click [**here**](https://gnguyen87.github.io/causal_final_proj/) for the full statistical report!
-
-\
-
-\
-
-\
 
 ## A Closer Look
 
@@ -127,3 +108,29 @@ Let's take a closer look at how residential segregation correlates with the disp
 :::
 :::
 :::
+
+## Social Vulnerability vs. Climate Change
+
+From our findings, it was clear that socially vulnerable neighborhoods (high poverty levels and minority population) are more exposed to air pollution and higher temperatures.
+
+## Social Vulnerability vs. Air Pollution
+
+::: {style="display: flex; justify-content: center; align-items: center; gap: 20px;"}
+<img src="assets/images/airpollution_estimates.png" alt="Air Pollution Estimates" width="80%" style="display: block; margin: auto;">
+
+:::
+
+In our analysis, we observed that census tracts with higher social vulnerability are exposed to **0.96 tons** of PM2.5 more than less vulnerable areas. 
+
+## Social Vulnerability vs. Land Surface Temperature
+
+::: {style="display: flex; justify-content: center; align-items: center; gap: 20px;"}
+<img src="assets/images/lst_estimates.png" alt="LST Estimates" width="80%" style="display: block; margin: auto;">
+
+:::
+
+In the same vein, our model revealed that census tracts with higher social vulnerability had a mean land surface temperature that were **2.22°F higher** than less vulnerable areas.
+
+Click [**here**](https://gnguyen87.github.io/causal_final_proj/) for the full statistical report!
+
+

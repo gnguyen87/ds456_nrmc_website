@@ -138,10 +138,10 @@ ul.task-list li input[type="checkbox"] {
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-narrative-font-size: 24px;
---cr-narrative-font-family: Poppins;
---cr-narrative-text-color-sidebar: ;
+          --cr-narrative-text-color-sidebar: ;
 --cr-section-background-color: ;
+--cr-narrative-font-size: 24px;
+--cr-narrative-font-family: Poppins;
         }
       </style>
     
@@ -180,22 +180,6 @@ ul.task-list li input[type="checkbox"] {
 </p>
 <p><br>
 </p>
-<section id="social-vulnerability-vs.-climate-change" class="level2">
-<h2 class="anchored" data-anchor-id="social-vulnerability-vs.-climate-change">Social Vulnerability vs.&nbsp;Climate Change</h2>
-<p>From our findings, it was clear that socially vulnerable neighborhoods (high poverty levels and minority population) are more exposed to air pollution and higher temperatures.</p>
-<p>Before controlling for variables, socially vulnerable census tracts have a higher median for both average PM2.5 emissions and land surface temperature (graph below).</p>
-<div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
-<p><img src="assets/images/air_pollution_boxplot.png" alt="Air Pollution Boxplot" width="562"> <img src="assets/images/lst_boxplot.png" alt="LST Boxplot" width="560"></p>
-</div>
-<p>More importantly, <strong>after matching and modelling</strong>, we observed that census tracts with higher social vulnerability are exposed to <strong>0.96 tons</strong> of PM2.5 more than less vulnerable areas. In the same vein, our model revealed that census tracts with higher social vulnerability had a mean land surface temperature that were <strong>2.22°F higher</strong> than less vulnerable areas.</p>
-<p>Click <a href="https://gnguyen87.github.io/causal_final_proj/"><strong>here</strong></a> for the full statistical report!</p>
-<p><br>
-</p>
-<p><br>
-</p>
-<p><br>
-</p>
-</section>
 <section id="a-closer-look" class="level2">
 <h2 class="anchored" data-anchor-id="a-closer-look">A Closer Look</h2>
 <p>Let’s take a closer look at how residential segregation correlates with the disparity in social vulnerability index*, temperature, and air pollution in different Minneapolis neighborhoods.</p>
@@ -314,6 +298,25 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+</section>
+<section id="social-vulnerability-vs.-climate-change" class="level2">
+<h2 class="anchored" data-anchor-id="social-vulnerability-vs.-climate-change">Social Vulnerability vs.&nbsp;Climate Change</h2>
+<p>From our findings, it was clear that socially vulnerable neighborhoods (high poverty levels and minority population) are more exposed to air pollution and higher temperatures.</p>
+</section>
+<section id="social-vulnerability-vs.-air-pollution" class="level2">
+<h2 class="anchored" data-anchor-id="social-vulnerability-vs.-air-pollution">Social Vulnerability vs.&nbsp;Air Pollution</h2>
+<div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+<p><img src="assets/images/airpollution_estimates.png" alt="Air Pollution Estimates" width="80%" style="display: block; margin: auto;"></p>
+</div>
+<p>In our analysis, we observed that census tracts with higher social vulnerability are exposed to <strong>0.96 tons</strong> of PM2.5 more than less vulnerable areas.</p>
+</section>
+<section id="social-vulnerability-vs.-land-surface-temperature" class="level2">
+<h2 class="anchored" data-anchor-id="social-vulnerability-vs.-land-surface-temperature">Social Vulnerability vs.&nbsp;Land Surface Temperature</h2>
+<div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+<p><img src="assets/images/lst_estimates.png" alt="LST Estimates" width="80%" style="display: block; margin: auto;"></p>
+</div>
+<p>In the same vein, our model revealed that census tracts with higher social vulnerability had a mean land surface temperature that were <strong>2.22°F higher</strong> than less vulnerable areas.</p>
+<p>Click <a href="https://gnguyen87.github.io/causal_final_proj/"><strong>here</strong></a> for the full statistical report!</p>
 
 
 </section>
